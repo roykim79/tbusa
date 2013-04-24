@@ -122,6 +122,8 @@ h1, h2, h3, h4{
 }
 h1{
 	font-size: 50px;
+}
+.main-header h1{
 	text-shadow: 3px 2px 0 #666;
 }
 h2{
@@ -172,6 +174,9 @@ a:hover{
 	color: #666;
 	text-align: center;
 	text-shadow: 2px 2px 2px black;
+}
+.center-join{
+	text-align: center;
 }
 .button{
 	background-color: #1570a6;
