@@ -46,62 +46,37 @@ b, strong{
 i, em{
 	font-style: italic;
 }
+/* Start here */
 
-/* - - - - - S T A R T - H E R E - - - - - */
 
-/* Grid */
-
-.container {
-	width: 960px;
-	margin: 0 auto;
-}  
+.container{
+	margin: 0 auto 0 0px;
+	width: 960px;	
+}
 .col-1,
 .col-2,
 .col-3,
-.col-a,
-.col-b
-.col-c
-{
+.col-x{
 	margin-left: 10px;
 	margin-right: 10px;
 }
 .col-1{
 	float: left;
-	width: 220px;
+	width: 120px;
 	text-align: center;
 }
 .col-2{
 	float: left;
-	width: 460px;
+	width: 220px;
 }
 .col-3{
-	float: right;
-	width: 700px;
-}
-.cola-a{
 	float: left;
-	text-align: center;
-	width: 150px;
+	width: 510px
 }
-.col-b{
-	width: 375px;
-}
-.col-c{
-	width: 730px;
-}
-.qaleft,
-.qaright{
+.col-x{
 	float: left;
+	width: 800px;
 }
-.qaleft{
-	width: 20px;
-}
-.qaright{
-	width: 940px;
-}
-
-/* Clearfix */
-
 .group:before,
 .group:after {
 	content: "";
@@ -115,178 +90,141 @@ i, em{
 	*zoom: 1;
 }
 
-/* Custom Styles */
+/* Custom Styles*/
 
 body{
-	background: url(img/binding_light.png);
-	color: black;
-	font: 16px 'Roboto Condensed', Garamond, serif;
-	margin: auto;
-	margin-bottom: 20px;
+	background: rgb(245,245,245);
+	font-family: 'Quicksand', sans-serif;
 }
 section{
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-	padding-top: 20px;
+
 }
 
 /* Typography */
 
-h1, h2, h3, h4{
+
+h1, h2, h3, h4, h5, h6{
 	color: black;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto Condensed', helvetica, arial, sans-serif;
 	font-weight: bold;
 }
 h1{
+	color: #FF0000;
 	font-size: 60px;
+	line-height: 90px;
+	padding-left: 100px;
 }
 h2{
-	font-size: 36px;
-	color: #666;
-	text-shadow: 2px 2px 3px black;
+	font-size: 48px;
+	line-height: 60px;
 }
 h3{
-	font-size: 20px;
+	font-size: 36px;
+	line-height: 45px;
 }
 h4{
+	font-size: 24px;
+	line-height: 30px;
+	text-decoration: underline;
+}
+h5{
+	font-size: 18px;
+	line-height: 22px;
+}
+h6{
 	font-size: 16px;
+	line-height: 20px;
 }
 p{
 	font-size: 16px;
-	padding-bottom: 10px;
+	line-height: 20px;
 }
 
 /* Links */
 
 a{
-	color: #D5DED9;
+	color: #033649;
 	text-decoration: none;
 }
 a:hover{
-	color: #99B2B7;
+	color: #036564;
+	text-transform: uppercase;
+}
+p a.button{
+    background: radial-gradient(#033649, #031634);
+    line-height: 30px;
+}
+p a:hover{
+	background: radial-gradient(#031634, #033649);
+	color: #CDB380; 
 }
 
 /* Lists */
 
-.nav-list{
-	list-style: none;
-}
-.conquests li{
-	padding: 5px;
-}
-.conquests h3{
-	text-decoration: underline;
+ol{
+	line-height: 30px;
+	list-style: lower-alpha; 
+	padding-left: 30px;
 }
 
 /* Misc Styles */
 
-.team{
-	border-radius: 50%;
-	padding-top: 15px;
-}
 .center{
-	color: white;
-	text-align: center;
-	text-shadow: 1px 1px 1px black;
-}
-.center-join{
 	text-align: center;
 }
-.button{
-	background-color: white;
-	margin: 10px auto;
-	padding: 2px;
-	width: 40px;
+.pad-top{
+	padding-top: 20px;
 }
-.button a{
-	color: black;
+img{
+	padding: 10px 0;
 }
-.button a:hover{
-	color: white;
+.right{
+	float: right;
 }
-.button:hover{
-	background-color: black;
-	color: white;
-	margin: 10px auto;
-	padding: 2px;
-	width: 40px;
-}
-
 /* Header */
 
 header{
-	background: linear-gradient(to right, #7A6A53, #948C75, #D9CEB2)
+	background: linear-gradient(to right, #031634, #033649);
+	margin-bottom: 5px;
 }
-
-/* Name */
-
-.name{
-	color: #D5DED9;
-	letter-spacing: -5px;
-	margin-left: 10px;
+.title{
+	color: #E8DDCB;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-style: italic;
 }
 
 /* Nav */
 
-nav{
-	background: linear-gradient(to right, #99B2B7, #D5DED9);
-}
-nav li{
-	border: 1px solid #7A6A53;
-	display: inline-block;
-	padding: 0 10px;
-}
-nav a{
-	color: #948C75;
-	display: block;
-	line-height: 60px;
-}
-nav a:hover{
-	color: #7A6A53;
-}
-nav li:hover{
-	background: rgba(0,0,0,.10);
-}
-.navbox{
-	color: blue;
+.button{
+	color: #E8DDCB;
     text-decoration: none;
 }
-
-.my-box {
-    background-color: green;
-    border:1px solid red;
+.col-1 .nav-box{
+    background: radial-gradient(#033649, #031634);
+    margin-top: 5px;
     line-height: 100px;
 }
-a.navbox{
+a.button{
     display: block;
     height: 100%;
     width: 100%;
 }
-/* Footer */
-footer{
-	padding-bottom: none;
-
+.nav-box:hover{
+	background: radial-gradient(#031634, #033649);
 }
+.nav-box a:hover{
+	color: #CDB380;
+	text-transform: uppercase;
+}
+/* Footer */
 
+footer{
+	padding: 30px 10px;
+}
 footer li{
 	display: inline;
-	font-size: 28px;
-	text-shadow: 1px 2px 8px black;
-
 }
-
-footer #join{
-	color: white;
-}
-footer img{
-	padding-top: 8px;
-}
-footer a:hover{
-	color: white;
-	text-shadow: 10px 10px 10px black;
-}
-#join{
+footer .col-x{
 	float: right;
-	margin-bottom: 10px;
-	padding-top: 10px;
 }
