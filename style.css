@@ -57,21 +57,37 @@ i, em{
 }  
 .col-1,
 .col-2,
-.col-3 {
+.col-3,
+.col-a,
+.col-b
+.col-c
+{
 	margin-left: 10px;
 	margin-right: 10px;
 }
-.col-1 {
+.col-1{
 	float: left;
 	width: 220px;
 	text-align: center;
 }
-.col-2 {
+.col-2{
+	float: left;
 	width: 460px;
 }
-.col-3 {
+.col-3{
 	float: right;
 	width: 700px;
+}
+.cola-a{
+	float: left;
+	text-align: center;
+	width: 150px;
+}
+.col-b{
+	width: 375px;
+}
+.col-c{
+	width: 730px;
 }
 .qaleft,
 .qaright{
@@ -102,29 +118,27 @@ i, em{
 /* Custom Styles */
 
 body{
-	background: white;
+	background: url(img/binding_light.png);
 	color: black;
-	font: 16px Helvetica;
+	font: 16px 'Roboto Condensed', Garamond, serif;
 	margin: auto;
 	margin-bottom: 20px;
 }
 section{
-	border-bottom: 2px solid #e5e5e5;
 	margin-bottom: 10px;
-	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-top: 20px;
 }
 
 /* Typography */
 
 h1, h2, h3, h4{
 	color: black;
+	font-family: 'Quicksand', sans-serif;
 	font-weight: bold;
 }
 h1{
-	font-size: 50px;
-}
-.main-header h1{
-	text-shadow: 3px 2px 0 #666;
+	font-size: 60px;
 }
 h2{
 	font-size: 36px;
@@ -145,16 +159,16 @@ p{
 /* Links */
 
 a{
-	color: #666;
+	color: #D5DED9;
 	text-decoration: none;
 }
 a:hover{
-	color: #1570a6;
+	color: #99B2B7;
 }
 
 /* Lists */
 
-.navlist{
+.nav-list{
 	list-style: none;
 }
 .conquests li{
@@ -171,16 +185,15 @@ a:hover{
 	padding-top: 15px;
 }
 .center{
-	color: #666;
+	color: white;
 	text-align: center;
-	text-shadow: 2px 2px 2px black;
+	text-shadow: 1px 1px 1px black;
 }
 .center-join{
 	text-align: center;
 }
 .button{
-	background-color: #1570a6;
-	border: 2px black ridge;
+	background-color: white;
 	margin: 10px auto;
 	padding: 2px;
 	width: 40px;
@@ -188,56 +201,92 @@ a:hover{
 .button a{
 	color: black;
 }
+.button a:hover{
+	color: white;
+}
 .button:hover{
-	background-color: #e5e5e5;
+	background-color: black;
+	color: white;
+	margin: 10px auto;
+	padding: 2px;
+	width: 40px;
 }
 
 /* Header */
 
-.main-header{
-	background-color: black;
+header{
+	background: linear-gradient(to right, #7A6A53, #948C75, #D9CEB2)
 }
 
 /* Name */
 
 .name{
-	color: white;
-	float: left;
-	font-weight: bolder;
+	color: #D5DED9;
+	letter-spacing: -5px;
 	margin-left: 10px;
 }
 
 /* Nav */
 
-.main-nav{
-	float: right;
-	margin-top: 135px;
-}	
-.main-nav li{
-	display: inline;
-	margin: 0 15px;
+nav{
+	background: linear-gradient(to right, #99B2B7, #D5DED9);
+}
+nav li{
+	border: 1px solid #7A6A53;
+	display: inline-block;
+	padding: 0 10px;
+}
+nav a{
+	color: #948C75;
+	display: block;
+	line-height: 60px;
+}
+nav a:hover{
+	color: #7A6A53;
+}
+nav li:hover{
+	background: rgba(0,0,0,.10);
+}
+.navbox{
+	color: blue;
+    text-decoration: none;
+}
+
+.my-box {
+    background-color: green;
+    border:1px solid red;
+    line-height: 100px;
+}
+a.navbox{
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 /* Footer */
 footer{
-	border-bottom: 2px solid #e5e5e5;
 	padding-bottom: none;
+
 }
 
 footer li{
 	display: inline;
 	font-size: 28px;
+	text-shadow: 1px 2px 8px black;
+
 }
-footer a{
-	color: red;
+
+footer #join{
+	color: white;
 }
 footer img{
 	padding-top: 8px;
 }
 footer a:hover{
-	color: yellow;
+	color: white;
+	text-shadow: 10px 10px 10px black;
 }
 #join{
 	float: right;
-	padding-top: 30px;
-	text-shadow: 1px 2px 8px black;
+	margin-bottom: 10px;
+	padding-top: 10px;
 }
